@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title Jagoda - salon fryzjerski
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    #fullpage
+      .section
+        .intro
+          %h1= "Jagoda"
+          %p= "Salon fryzjerski"
+      .section
+        .slice
+        .intro
+          %h1= "Galeria"
+      .section Some section
+      .section Some section
