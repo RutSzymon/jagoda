@@ -52,3 +52,21 @@ h1{
 #section0{
   overflow: hidden;
 }
+#section1{
+  background: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#E680B2));
+  background: -webkit-linear-gradient(#FFF, #E680B2);
+  background: linear-gradient(#FFF, #E680B2);
+}
+
+#slide1{
+  background-image: url(hair1.jpg);
+  padding: 6% 0 0 0;
+}
+#slide2{
+  background-image: url(hair2.jpg);
+  padding: 6% 0 0 0;
+}
+#slide3{
+  background-image: url(hair3.jpg);
+  padding: 6% 0 0 0;
+}
