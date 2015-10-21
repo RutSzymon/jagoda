@@ -10,7 +10,6 @@ $(document).ready ->
       $("video").get(0).play()
 
     onLeave: (index, nextIndex, direction) ->
-      $("#logo").toggleClass("active", index == 2 && direction == "up")
       $("#logo").toggleClass("moveToSecond", nextIndex == 2)
       $("#logo").toggleClass("moveToThird", nextIndex == 3)
       $("#logo").toggleClass("moveToFourth", nextIndex == 4)
