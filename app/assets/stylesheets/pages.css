@@ -15,12 +15,34 @@ h1{
   font-family: logo_font;
   color: #c82d3c;
   margin:0;
+  padding-left: 5%
 }
 
 .logo-subtext{
   color: #c82d3c;
   font-family: logo_font;
   font-size: 4em;
+}
+
+.column{
+  font-size: 1.5em;
+  color: #c82d3c;
+  list-style-type: none;
+  margin-top: 5%;
+}
+
+.column li{
+  line-height: 5em;
+}
+
+.column.left{
+  float: left;
+  margin-left: 5%;
+}
+
+.column.right{
+  float: right;
+  margin-right: 15%;
 }
 
 .section{
