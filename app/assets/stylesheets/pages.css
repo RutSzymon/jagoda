@@ -1,7 +1,7 @@
 h1{
   font-size: 5em;
   font-family: arial,helvetica;
-  color: #CC0066;
+  color: #c82d3c;
   margin:0;
 }
 
@@ -15,12 +15,18 @@ h1{
   text-align:center;
 }
 
-.controlArrow.prev {
-  left: 50px;
+.fp-slides{
+  z-index: 6 !important;
 }
 
-.controlArrow.next{
-  right: 50px;
+.fp-controlArrow.fp-prev {
+  left: 50px;
+  z-index: 10;
+}
+
+.fp-controlArrow.fp-next{
+  right: 75px !important;
+  z-index: 10;
 }
 
 #myVideo{
@@ -46,18 +52,26 @@ h1{
   width: 100%;
   left: 0;
   top: 43%;
-  color: #CC0066;
+  color: #C82D3C;
 }
 
 #section0{
   overflow: hidden;
 }
 #section1{
-  background: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#E680B2));
-  background: -webkit-linear-gradient(#FFF, #E680B2);
-  background: linear-gradient(#FFF, #E680B2);
+  background: -webkit-gradient(linear, top left, bottom left, from(#FFF), to(#F085B8));
+  background: -webkit-linear-gradient(#FFF, #F085B8);
+  background: linear-gradient(#FFF, #F085B8);
+}
+#section2{
+  background: -webkit-gradient(linear, top left, bottom left, from(#F085B8), to(#FFF));
+  background: -webkit-linear-gradient(#F085B8, #FFF);
+  background: linear-gradient(#F085B8, #FFF);
 }
 
+.slide{
+  z-index: 6;
+}
 #slide1{
   background-image: url(hair1.jpg);
   padding: 6% 0 0 0;
@@ -69,4 +83,53 @@ h1{
 #slide3{
   background-image: url(hair3.jpg);
   padding: 6% 0 0 0;
+}
+
+#logo{
+  display: block;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  min-width: 980px;
+  height: 100%;
+  text-align:center;
+
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+#logo.moveToFirst{
+-webkit-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+}
+#logo.moveToSecond{
+-webkit-transform: translate3d(0, 100%, 0);
+    -ms-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+}
+#logo.moveToThird{
+-webkit-transform: translate3d(0, 200%, 0);
+    -ms-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+}
+#logo.moveToFourth{
+-webkit-transform: translate3d(0, 300%, 0);
+    -ms-transform: translate3d(0, 300%, 0);
+        transform: translate3d(0, 300%, 0);
+}
+#logo.moveDown .layer{
+  top: 50%;
+}
+#logo.moveDown img{
+  top: 155px;
+}
+
+#logo.active .layer{
+  top: 50%;
 }
