@@ -9,6 +9,13 @@ $(document).ready ->
     afterRender: ->
       $("video").get(0).play()
 
+    afterLoad: (anchorLink, index) ->
+      if index == 2
+        $(".column.left li").each (i, li) ->
+          $(li).delay(i * 500).fadeIn(200)
+        $(".column.right li").each (i, li) ->
+          $(li).delay(i * 500).fadeIn(200)
+
     onLeave: (index, nextIndex, direction) ->
       $("#logo").toggleClass("moveToSecond", nextIndex == 2)
       $("#logo").toggleClass("moveToThird", nextIndex == 3)
