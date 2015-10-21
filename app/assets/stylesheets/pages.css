@@ -1,3 +1,8 @@
+@font-face {
+  font-family: logo_font;
+  src: url(logo_font.ttf);
+}
+
 h1{
   font-size: 5em;
   font-family: arial,helvetica;
@@ -5,10 +10,17 @@ h1{
   margin:0;
 }
 
-.intro p{
-  color: #fff;
-  font-family: arial,helvetica;
-  font-size: 1.5em;
+.logo-text{
+  font-size: 8em;
+  font-family: logo_font;
+  color: #c82d3c;
+  margin:0;
+}
+
+.logo-subtext{
+  color: #c82d3c;
+  font-family: logo_font;
+  font-size: 4em;
 }
 
 .section{
